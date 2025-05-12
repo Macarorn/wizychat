@@ -1,3 +1,4 @@
+// Returns one of several preset bot replies at random
 export const getRandomBotResponse = (): string => {
   const responses = [
     "Sure! Let me help you with that.",

@@ -3,7 +3,7 @@ export type Sender = "user" | "bot";
 export interface ChatMessage {
   id: string;
   sender: Sender;
-  content: string; // JSON stringified if product list
+  content: string;
   timestamp: string;
 }
 

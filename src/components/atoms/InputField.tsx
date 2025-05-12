@@ -1,7 +1,8 @@
+// Message input with send button, emoji, and “Powered By” footer
 import React from "react";
 import Sendarrow from "../../assets/icons/send-arrow";
 import Happyface from "../../assets/icons/happy-face";
-import Wizylogo from "../../wizychat-logo";
+import Wizylogo from "../../assets/icons/wizychat-logo";
 
 interface InputFieldProps {
   value: string;
@@ -11,10 +12,8 @@ interface InputFieldProps {
 
 export const InputField = ({ value, onChange, onSend }: InputFieldProps) => (
   <div className="w-full flex flex-col">
-    {/* Separator line */}
     <div className="border-t border-gray-300" />
 
-    {/* Text field + button */}
     <div className="flex items-center px-4 py-2">
       <Happyface width={20} height={20} className="mr-3" />
       <input
@@ -32,11 +31,11 @@ export const InputField = ({ value, onChange, onSend }: InputFieldProps) => (
         <Sendarrow width={20} height={20} />
       </button>
     </div>
-    <div className="bg-[#f0f0f0] flex items-center justify-center text-xs text-[#a4acac] py-2 rounded-b-xl -mt-1">
-      <span className="font-bold border-b border-[#a4acac]">
+    <div className="bg-[#f0f0f0] flex items-center justify-center text-xs text-[#a4acac] pb-1 rounded-b-xl -mt-1">
+      <span className="font-light border-b border-[#bac2c2]">
         Powered By Wizybot
       </span>
-      <Wizylogo width={20} height={20} className="ml-3" color="#a4acac" />
+      <Wizylogo width={20} height={10} className="ml-1" color="#a4acac" />
     </div>
   </div>
 );

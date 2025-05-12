@@ -1,3 +1,4 @@
+// Retrieves and returns up to 3 products from the demo list
 import { Product } from "../types/chat";
 
 export const fetchProductRecommendations = async (): Promise<Product[]> => {
@@ -5,9 +6,8 @@ export const fetchProductRecommendations = async (): Promise<Product[]> => {
     "https://api.wizybot.com/products/demo-product-list"
   );
   if (!response.ok) throw new Error("Failed to fetch products");
-  const data: any[] = await response.json();
-
-  return data.map((item) => ({
+  const data = await response.json();
+  return data.slice(0, 3).map((item: any) => ({
     id: item.id,
     displayTitle: item.displayTitle,
     imageUrl: item.imageUrl,

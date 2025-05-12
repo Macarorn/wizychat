@@ -1,6 +1,6 @@
+// Renders a chat bubble aligned by sender with timestamp
 import React from "react";
 import { Sender } from "../../types/chat";
-
 interface ChatBubbleProps {
   sender: Sender;
   content: string;
@@ -25,13 +25,10 @@ export const ChatBubble = ({ sender, content }: ChatBubbleProps) => {
     <div className={`flex ${isUser ? "justify-end" : "justify-start"}`}>
       <div
         className={`max-w-[75%] px-4 py-2 rounded-xl text-sm mb-1 shadow ${
-          isUser
-            ? "bg-[#64c8d7] text-black rounded-br-none"
-            : "bg-[#f0f0f0] text-black rounded-bl-none"
+          isUser ? "bg-[#64c8d7] text-black " : "bg-[#f0f0f0] text-black "
         }`}
       >
         {content}
-        {/* timestamp always aligned left */}
         <div className="text-[10px] text-[#505a69] text-left mt-1">
           {time} | {day}
         </div>

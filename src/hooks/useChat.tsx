@@ -1,3 +1,4 @@
+// Handles message list, typing state, and simulates bot replies (including product fetch)
 import { useState, useEffect } from "react";
 import { ChatMessage } from "../types/chat";
 import { fetchProductRecommendations } from "../utils/api";

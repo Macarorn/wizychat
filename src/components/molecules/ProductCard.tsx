@@ -1,3 +1,4 @@
+// Displays product image, truncated title, price, and link
 import React from "react";
 import { Product } from "../../types/chat";
 
@@ -5,7 +6,7 @@ interface ProductCardProps {
   product: Product;
 }
 
-const MAX_TITLE = "MSI Katana GF66 Gaming Laptop".length; 
+const MAX_TITLE = "MSI Katana GF66 Gaming Laptop".length;
 
 function truncateTitle(title: string) {
   return title.length > MAX_TITLE

@@ -46,7 +46,7 @@ export const ChatInterface = () => {
   return (
     <div className="bg-white rounded-t-xl rounded-b-xl w-full max-w-sm shadow-md rounded h-[90vh] flex flex-col overflow-hidden">
       {/* ——— header ——— */}
-      <div className="pb-2 rounded-t-xl bg-gradient-to-r from-[#191e41] to-[#39559b] p-4 flex items-center justify-between">
+      <div className="pb-1 rounded-t-xl bg-gradient-to-r from-[#191e41] to-[#39559b] p-4 flex items-center justify-between">
         <div className="flex items-center space-x-2">
           <Profile width={40} height={40} />
           <div className="flex flex-col">
@@ -73,27 +73,31 @@ export const ChatInterface = () => {
             We reply immediately!
           </span>
         </div>
+        
         <div
           className="absolute top-full left-0 w-full overflow-hidden"
-          style={{ height: "20px" }} 
+          style={{ height: "20px" }}
         >
           <svg
             className="w-full h-full transform -scale-y-100"
             viewBox="0 0 1200 100"
             preserveAspectRatio="none"
           >
+            
             <defs>
               <linearGradient id="headerGrad" x1="0" x2="1" y1="0" y2="0">
                 <stop offset="0%" stopColor="#191e41" />
                 <stop offset="100%" stopColor="#39559b" />
               </linearGradient>
             </defs>
+            
             <path
               d="M0,30 C150,0 350,40 600,20 C850,0 1050,40 1200,20 L1200,100 L0,100 Z"
               fill="url(#headerGrad)"
             />
           </svg>
         </div>
+        
       </div>
 
       {/* ——— messages ——— */}
