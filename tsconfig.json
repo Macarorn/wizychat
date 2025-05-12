@@ -6,6 +6,7 @@
     "lib": ["ES2017", "DOM"],
     "module": "nodenext",
     "target": "es2022",
+    
 
     "strict": true,
     "esModuleInterop": true,
