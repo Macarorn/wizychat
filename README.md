@@ -1,11 +1,37 @@
+# Project Setup
 
-## Available Scripts
+**Prerequisites:**
+````markdown
+- Node.js (>= 14.x)
+- npm (>= 6.x)
+````
 
-In the project directory, you can run:
 
-### `yarn start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clone the repository:
+````markdown
+   ```bash
+   git clone <repo-url>
+   cd <repo-directory>
+````
 
-### `yarn build`
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+
+   ```bash
+   npm run start
+   ```
+
+4. Open your browser and visit:
+
+   ```
+   http://localhost:3000
+   ```
+
+---
