@@ -51,7 +51,7 @@ export const ChatInterface = () => {
           <Profile width={40} height={40} />
           <div className="flex flex-col">
             <span className="text-xs text-white">Chat with</span>
-            <span className="text-white text-base font-bold">[Chat Name]</span>
+            <span className="text-white text-base font-bold">Wizychat</span>
           </div>
         </div>
         <div className="flex items-center ">
